@@ -7,53 +7,77 @@
 An AI-powered application that automatically recognizes food items and calculates prices for canteen meal trays, built with YOLO and CNN models to accurately identify Vietnamese food dishes and calculate their prices and caloric values.
 The system uses computer vision and deep learning technologies to automate the payment process in canteens. Through a single image of a food tray, the application can:
 
+
 Detect and locate individual food items on the tray using YOLOv8
+
 Accurately classify each food item from a set of 41 common Vietnamese dishes using CNN
+
 Calculate the bill based on the recognized items, including pricing and caloric values
+
 Provide a web interface for users to upload images and view results
 
 # ✨ Key Features
 
-Multi-food recognition: Can identify multiple food items on a single tray
-Accurate classification: Uses CNN for high accuracy in classification
-Automatic calculation: Automatically calculates total price and calories
-RESTful API: Provides APIs for image analysis and detailed results
-Web user interface: Intuitive interface for uploading images and displaying results
-Manual edit support: Allows users to adjust classification results if needed
+- **🔍 Advanced Food Detection**: Uses YOLOv8 to locate and crop individual food items on a tray
+- **🍲 Vietnamese Food Classification**: Employs a fine-tuned CNN model to identify 41 different Vietnamese food items
+- **💰 Automated Billing**: Calculates the total cost based on detected items
+- **🥗 Nutritional Analysis**: Provides calorie content and meal balance feedback
+- **🖥️ Responsive Web Interface**: User-friendly design that works on both desktop and mobile devices
+- **✏️ Manual Correction**: Allows for easy adjustment of misidentified items
+- **📊 Transaction History**: Keeps records of past purchases
+- **🌙 Dark/Light Mode**: Interface adapts to user preference
 
 # 🛠️ Technology Stack
-Backend: Python, Flask
-Computer Vision: YOLOv8, OpenCV
-Machine Learning: TensorFlow/Keras with CNN
-Frontend: HTML, CSS, JavaScript
-Data Storage: CSV-based menu system
+**Backend: Python, Flask
+**Computer Vision: YOLOv8, OpenCV
+**Machine Learning: TensorFlow/Keras with CNN
+**Frontend: HTML, CSS, JavaScript
+**Data Storage: CSV-based menu system
 
 # 🔧 System Requirements
 
-Python 3.8, 3.9 or 3.10
-CUDA (recommended for GPU acceleration)
-Libraries listed in requirements.txt
+- Python 3.8, 3.9 or 3.10
+- CUDA (recommended for GPU acceleration)
+- Libraries listed in requirements.txt
+- Web camera or image input source
 
 # 🚀 Installation Guide
 bash# Clone repository
 git clone https://github.com/KhaiNghiTranNguyen/AI-Challenge-3ITech.git
 cd AI-Challenge-3ITech
 
-# Install dependencies
-pip install -r requirements.txt
-💻 Usage
-Running the Web Application
-bashpython web_server.py
-Access the web application through your browser at: http://localhost:5001
-Using from Command Line
-bashpython main.py --image path/to/your/food_tray_image.jpg
-Using the API
-Main API: POST /api/analyze
-Example using cURL:
-bashcurl -X POST -F "image=@path/to/your/food_tray_image.jpg" http://localhost:5001/api/analyze
-Or send base64 data:
-bashcurl -X POST -d "imageData=base64_encoded_image_data" http://localhost:5001/api/analyze
+# Installation
 
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/AI-challenge-UEH-2025/vietnamese-canteen-vision.git
+   cd vietnamese-canteen-vision
+   ```
+
+2. Install the required packages:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Start the web server:
+   ```bash
+   python web_server.py
+   ```
+
+4. Access the interface at http://localhost:5000
+
+# Docker Installation (Alternative)
+
+```bash
+# Build the Docker image
+docker build -t canteenvision .
+
+# Run the container
+docker run -p 5000:5000 canteenvision
+```
+
+
+# 📊 Project Structure
 ```
 food-recognition-canteen/
 ├── app.py                # Main Flask application
@@ -91,12 +115,17 @@ Provides higher accuracy in classifying individual food items
 # 🍲 Supported Food Items
 The system can recognize 41 common Vietnamese food items in canteens:
 
-Rice dishes: rice, banh mi (Vietnamese sandwich)
-Vegetables: boiled cabbage, stir-fried cabbage, tomatoes, carrots, okra, tofu, green beans, cucumber, chili, leafy greens, water spinach, coriander
-Meat dishes: stir-fried beef, fried chicken, braised chicken, pork ribs, stir-fried pork ribs, fried meat, boiled meat, fried eggs, boiled eggs
-Fish dishes: fried fish, braised fish, shrimp
-Soups and liquid dishes: gourd soup, pumpkin soup, vegetable soup, sour soup, seaweed soup, fish sauce, soy sauce
-Others: banana, pickled vegetables, watermelon, bitter melon, braised meat with black pepper, braised egg, guava, dragon fruit
+- Rice dishes: rice, banh mi (Vietnamese sandwich)
+
+- Vegetables: boiled cabbage, stir-fried cabbage, tomatoes, carrots, okra, tofu, green beans, cucumber, chili, leafy greens, water spinach, coriander
+
+- Meat dishes: stir-fried beef, fried chicken, braised chicken, pork ribs, stir-fried pork ribs, fried meat, boiled meat, fried eggs, boiled eggs
+
+- Fish dishes: fried fish, braised fish, shrimp
+
+- Soups and liquid dishes: gourd soup, pumpkin soup, vegetable soup, sour soup, seaweed soup, fish sauce, soy sauce
+
+- Others: banana, watermelon, guava
 
 # 💻 Usage
 Upload a Food Tray Image:
@@ -115,6 +144,14 @@ Check the nutritional balance and suggestions
 Complete the Order:
 
 Click "Complete Order" to finalize and save the transaction
+
+<div align="center">
+  <p>Made with ❤️ for the AI Challenge 3ITECH 2025</p>
+  <p>
+    <a href="https://github.com/AI-challenge-UEH-2025/vietnamese-canteen-vision/issues">Report Bug</a> ·
+    <a href="https://github.com/AI-challenge-UEH-2025/vietnamese-canteen-vision/issues">Request Feature</a>
+  </p>
+</div>
 
 # 📝 License
 This project is distributed under the MIT License. See LICENSE file for more information.
