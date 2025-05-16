@@ -1,0 +1,13 @@
+train: D:/UEH/ml/obj_detection/an com.v11-train-lan-3.yolov8/train/images
+val: D:/UEH/ml/obj_detection/an com.v11-train-lan-3.yolov8/valid/images
+test: ../test/images
+
+nc: 41
+names: ['banh mi', 'bap cai luoc', 'bap cai xao', 'bo xao', 'ca chien', 'ca chua', 'ca kho', 'ca rot', 'canh bau', 'canh bi do', 'canh cai', 'canh chua', 'canh rong bien', 'chuoi', 'com', 'dau bap', 'dau hu', 'dau que', 'do chua', 'dua hau', 'dua leo', 'ga chien', 'ga kho', 'kho qua', 'kho tieu', 'kho trung', 'nuoc mam', 'nuoc tuong', 'oi', 'ot', 'rau', 'rau muong', 'rau ngo', 'suon mieng', 'suon xao', 'thanh long', 'thit chien', 'thit luoc', 'tom', 'trung chien', 'trung luoc']
+
+roboflow:
+  workspace: tnh-tin-cm
+  project: an-com
+  version: 11
+  license: MIT
+  url: https://universe.roboflow.com/tnh-tin-cm/an-com/dataset/11
