@@ -2,3 +2,10 @@
 *.pth
 *.h5
 *.onnx
+*.pt
+*.pth
+*.h5
+*.onnx
+*.tmp
+__pycache__/
+*.pyc
