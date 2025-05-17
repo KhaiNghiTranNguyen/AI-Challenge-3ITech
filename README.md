@@ -1,7 +1,6 @@
 # AI-Based Automated Food Recognition and Price Measurement Application for Canteen Meal Trays
 
 [GitHub Repository](https://github.com/KhaiNghiTranNguyen/AI-Challenge-3ITech)
-![image](https://github.com/user-attachments/assets/79992170-a514-4a08-9e50-2f383cc6f48c)
 
 
 <p align="center">
