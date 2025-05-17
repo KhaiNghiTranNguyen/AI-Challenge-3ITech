@@ -3,7 +3,16 @@
 [GitHub Repository](https://github.com/KhaiNghiTranNguyen/AI-Challenge-3ITech)
 ![image](https://github.com/user-attachments/assets/79992170-a514-4a08-9e50-2f383cc6f48c)
 
-[![Demo](https://img.youtube.com/vi/ID_VIDEO/0.jpg)]([https://www.youtube.com/watch?v=ID_VIDEO](https://youtu.be/w-ruyauu5rc?si=QKRNLERn3vB48aio))
+
+<p align="center">
+  <a href="https://youtu.be/w-ruyauu5rc?si=OVgKPpun4WrvD4pU" target="_blank">
+    <img src="https://raw.githubusercontent.com/AI-challenge-UEH-2025/vietnamese-canteen-vision/main/web_ui/static/img/banner.jpg" alt="Vietnamese Canteen Vision Banner" width="800"/>
+  </a>
+    <br/> <br/> <a href="https://www.python.org/downloads/" target="_blank"><img alt="Python 3.8+" src="https://img.shields.io/badge/python-3.8+-blue.svg"/></a>
+  <a href="https://www.tensorflow.org/" target="_blank"><img alt="TensorFlow" src="https://img.shields.io/badge/TensorFlow-2.9+-orange.svg"/></a>
+  <a href="https://github.com/ultralytics/ultralytics" target="_blank"><img alt="YOLOv8" src="https://img.shields.io/badge/YOLO-v8-darkgreen.svg"/></a>
+  <a href="https://opensource.org/licenses/MIT" target="_blank"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg"/></a>
+</p>
 
 # 📋 Overview
 An AI-powered application that automatically recognizes food items and calculates prices for canteen meal trays, built with YOLO and CNN models to accurately identify Vietnamese food dishes and calculate their prices and caloric values.
