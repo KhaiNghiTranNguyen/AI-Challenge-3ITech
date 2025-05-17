@@ -3,7 +3,7 @@
 [GitHub Repository](https://github.com/KhaiNghiTranNguyen/AI-Challenge-3ITech)
 ![image](https://github.com/user-attachments/assets/79992170-a514-4a08-9e50-2f383cc6f48c)
 
-![video](https://youtu.be/w-ruyauu5rc?si=OVgKPpun4WrvD4pU)
+[![Demo](https://img.youtube.com/vi/ID_VIDEO/0.jpg)]([https://www.youtube.com/watch?v=ID_VIDEO](https://youtu.be/w-ruyauu5rc?si=QKRNLERn3vB48aio))
 
 # 📋 Overview
 An AI-powered application that automatically recognizes food items and calculates prices for canteen meal trays, built with YOLO and CNN models to accurately identify Vietnamese food dishes and calculate their prices and caloric values.
